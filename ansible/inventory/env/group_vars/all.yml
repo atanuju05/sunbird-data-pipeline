@@ -44,7 +44,7 @@ ingestion_zookeepers: "{{ groups['ingestion-cluster-zookeepers']|join(':2181,')}
 
 telemetry_schema_directory: /etc/{{env}}/telemetry
 telemetry_schema_path: /etc/{{env}}/telemetry/schemas
-schema_repo_url: https://github.com/project-sunbird/sunbird-data-pipeline.git
+schema_repo_url: https://github.com/atanuju05/sunbird-data-pipeline.git
 # Create learningall group with LP ips
 cassandra_host:  "{{ groups['cassandra'][0] }}"
 core_cassandra_host: "{{ groups['core-cassandra'][0] }}"
